@@ -1,36 +1,20 @@
 package Hogvarts;
 
 public class PrintService {
-    public void printStudents(Gryffindor[] gryffindors) {
-        System.out.println("Список студентов Гриффиндора:");
-        for (int i = 0; i < gryffindors.length; i++) {
-            Gryffindor student = gryffindors[i];
-            System.out.println(student.getName() + ", " + student.getPower() + ", " + student.getDistance() + ", " +
-                    student.getNobility() + ", " + student.getHonor() + ", " + student.getBravery());
-        }
+    public void printStudent(Gryffindor gryffindor) {
+        System.out.println(gryffindor.getName() + ", " + gryffindor.getPower() + ", " + gryffindor.getDistance() + ", " +
+                    gryffindor.getNobility() + ", " + gryffindor.getHonor() + ", " + gryffindor.getBravery());
     }
-    public void printStudents(Puffenduy[] puffenduys) {
-        System.out.println("Список студентов Пуффендуя:");
-        for (int i = 0; i < puffenduys.length; i++) {
-            Puffenduy student = puffenduys[i];
-            System.out.println(student.getName() + ", " + student.getPower() + ", " + student.getDistance() + ", " +
-                    student.getIndustriousness() + ", " + student.getLoyalty() + ", " + student.getHonesty());
-        }
+    public void printStudent(Puffenduy puffenduy) {
+        System.out.println(puffenduy.getName() + ", " + puffenduy.getPower() + ", " + puffenduy.getDistance() + ", " +
+                    puffenduy.getIndustriousness() + ", " + puffenduy.getLoyalty() + ", " + puffenduy.getHonesty());
     }
-    public void printStudents(Kogtevran[] kogtevrans) {
-        System.out.println("Список студентов Когтеврана:");
-        for (int i = 0; i < kogtevrans.length; i++) {
-           Kogtevran student = kogtevrans[i];
-            System.out.println(student.getName() + ", " + student.getPower() + ", " + student.getDistance() + ", " +
-                    student.getCleverness() + ", " + student.getWisdom() + ", "+ student.getWit() + ", " + student.getTalent());
-        }
+    public void printStudent(Kogtevran kogtevran) {
+        System.out.println(kogtevran.getName() + ", " + kogtevran.getPower() + ", " + kogtevran.getDistance() + ", " +
+                    kogtevran.getCleverness() + ", " + kogtevran.getWisdom() + ", "+ kogtevran.getWit() + ", " + kogtevran.getTalent());
     }
-    public void printStudents(Slizerin[] slizerins) {
-        System.out.println("Список студентов Слизерина:");
-        for (int i = 0; i < slizerins.length; i++) {
-            Slizerin student = slizerins[i];
-            System.out.println(student.getName() + ", " + student.getPower() + ", " + student.getDistance() + ", " + student.getCunning() + ", " +
-                    student.getDetermination() + ", " + student.getAmbition() + ", " + student.getResourcefulness() + ", " + student.getAuthority());
-        }
+    public void printStudent(Slizerin slizerin) {
+        System.out.println(slizerin.getName() + ", " + slizerin.getPower() + ", " + slizerin.getDistance() + ", " + slizerin.getCunning() + ", " +
+                    slizerin.getDetermination() + ", " + slizerin.getAmbition() + ", " + slizerin.getResourcefulness() + ", " + slizerin.getAuthority());
     }
 }

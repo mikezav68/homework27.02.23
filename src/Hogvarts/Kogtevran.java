@@ -45,4 +45,17 @@ private int talent;
     public void setTalent(int talent) {
         this.talent = talent;
     }
+    private int allAbility(){
+        return cleverness + wisdom + wit + talent;
+    }
+    public void compareKogtevran(Kogtevran kogtevran){
+        int abilities1 = allAbility();
+        int abilities2 = kogtevran.allAbility();
+        System.out.print("По навыкам, присущим студентам факультета Когтевран, ");
+        if (abilities1 > abilities2) {
+            System.out.println(getName() + " лучше чем " + kogtevran.getName());
+        } else if (abilities1 == abilities2) {
+            System.out.println(getName() + " такой же как " + kogtevran.getName());
+        } else { System.out.println(kogtevran.getName() + " лучше чем " + getName()); }
+    }
 }

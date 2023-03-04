@@ -55,4 +55,17 @@ public class Slizerin extends Hogwarts {
     public void setAuthority(int authority) {
         this.authority = authority;
     }
+    private int allAbility(){
+        return cunning + determination + ambition + resourcefulness + authority;
+    }
+    public void compareSlizerin(Slizerin slizerin){
+        int abilities1 = allAbility();
+        int abilities2 = slizerin.allAbility();
+        System.out.print("По навыкам, присущим студентам факультета Слизерин, ");
+        if (abilities1 > abilities2) {
+            System.out.println(getName() + " лучше чем " + slizerin.getName());
+        } else if (abilities1 == abilities2) {
+            System.out.println(getName() + " такой же как " + slizerin.getName());
+        } else { System.out.println(slizerin.getName() + " лучше чем " + getName()); }
+    }
 }

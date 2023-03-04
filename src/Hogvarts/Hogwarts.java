@@ -1,6 +1,6 @@
 package Hogvarts;
 
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private int power;
     private int distance;
@@ -33,5 +33,19 @@ public class Hogwarts {
 
     public void setDistance(int distance) {
         this.distance = distance;
+    }
+    public void compareHogwarts(Hogwarts hogwarts){
+        System.out.print("По силе магии ");
+        if (getPower() > hogwarts.getPower()) {
+            System.out.println(getName() + " лучше чем " + hogwarts.getName());
+        } else if (getPower() == hogwarts.getPower()) {
+            System.out.println(getName() + " такой же как " + hogwarts.getName());
+        } else { System.out.println(hogwarts.getName() + " лучше чем " + getName()); }
+        System.out.print("По расстоянию трансгрессии ");
+        if (getDistance() > hogwarts.getDistance()) {
+            System.out.println(getName() + " лучше чем " + hogwarts.getName());
+        } else if (getDistance() == hogwarts.getDistance()) {
+            System.out.println(getName() + " такой же как " + hogwarts.getName());
+        } else { System.out.println(hogwarts.getName() + " лучше чем " + getName()); }
     }
 }

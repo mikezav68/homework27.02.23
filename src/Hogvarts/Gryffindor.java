@@ -34,4 +34,18 @@ public class Gryffindor extends Hogwarts {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
+
+    private int allAbility(){
+        return nobility + honor + bravery;
+    }
+    public void compareGryffindor(Gryffindor gryffindor){
+        int abilities1 = allAbility();
+        int abilities2 = gryffindor.allAbility();
+        System.out.print("По навыкам, присущим студентам факультета Гриффиндор, ");
+        if (abilities1 > abilities2) {
+            System.out.println(getName() + " лучше чем " + gryffindor.getName());
+        } else if (abilities1 == abilities2) {
+            System.out.println(getName() + " такой же как " + gryffindor.getName());
+        } else { System.out.println(gryffindor.getName() + " лучше чем " + getName()); }
+    }
 }
