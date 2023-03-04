@@ -20,13 +20,13 @@ public class Main {
                 new Slizerin("Graham Montague", 33, 64, 54, 65, 49, 87, 49),
                 new Slizerin("Gregory Goyle", 52, 28, 45, 55, 65, 54, 64)};
 
-        // пример вывода описания студента:
         printStudent(kogtevran[1]);
-        // пример сравнения любых студентов по базовым навыкам:
+
         kogtevran[1].compareHogwarts(slizerin[2]);
-        // пример сравнения студентов одного факультета:
+
         gryffindor[0].compareGryffindor(gryffindor[2]);
     }
+
     // перегрузка метода вывода описания студента:
     public static void printStudent(Gryffindor gryffindor) {
         System.out.println("Студент факультета Гриффиндор " + gryffindor.getName() +
