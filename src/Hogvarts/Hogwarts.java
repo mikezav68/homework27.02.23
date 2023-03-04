@@ -34,6 +34,7 @@ public abstract class Hogwarts {
     public void setDistance(int distance) {
         this.distance = distance;
     }
+
     public void compareHogwarts(Hogwarts hogwarts){
         System.out.print("По силе магии ");
         if (getPower() > hogwarts.getPower()) {

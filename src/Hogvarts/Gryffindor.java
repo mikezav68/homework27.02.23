@@ -38,6 +38,7 @@ public class Gryffindor extends Hogwarts {
     private int allAbility(){
         return nobility + honor + bravery;
     }
+
     public void compareGryffindor(Gryffindor gryffindor){
         int abilities1 = allAbility();
         int abilities2 = gryffindor.allAbility();

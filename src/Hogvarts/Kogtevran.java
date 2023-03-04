@@ -48,6 +48,7 @@ private int talent;
     private int allAbility(){
         return cleverness + wisdom + wit + talent;
     }
+
     public void compareKogtevran(Kogtevran kogtevran){
         int abilities1 = allAbility();
         int abilities2 = kogtevran.allAbility();

@@ -58,6 +58,7 @@ public class Slizerin extends Hogwarts {
     private int allAbility(){
         return cunning + determination + ambition + resourcefulness + authority;
     }
+
     public void compareSlizerin(Slizerin slizerin){
         int abilities1 = allAbility();
         int abilities2 = slizerin.allAbility();

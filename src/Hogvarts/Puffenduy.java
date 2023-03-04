@@ -37,6 +37,7 @@ public class Puffenduy extends Hogwarts {
     private int allAbility(){
         return industriousness + loyalty + honesty;
     }
+
     public void comparePuffenduy(Puffenduy puffenduy){
         int abilities1 = allAbility();
         int abilities2 = puffenduy.allAbility();
